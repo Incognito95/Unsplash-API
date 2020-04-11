@@ -26,17 +26,13 @@ r.onreadystatechange = function () {
 r.send();
 
 // &per_page=10 - shows x amount of images on a single page
+```
 
 The data was then converted from a JSON (click to view json data <a href="../data.json">JSON file</a>) to a CSV file in order to insert it into MySQL Workbench which is an SQL Graphical User Interface to manipulate data using database queries and four basic functions of persistent storage which are known as CRUD:
 <br>C - Create
 <br>R - Read
 <br>U - Update
 <br>D - Delete
-
-I put the:
-``
-&per_page=10 - shows x amount of images on a single page
-```
 
 ## Search
 Search function was made on the table collections layout view to make it easier to search and try to find what your looking for by using the keyword known as `LIKE` and `% %`. It's not 100% finished yet will be finishing the search function a little bit later on, but at the moment you can only search based on the number on the ID.
