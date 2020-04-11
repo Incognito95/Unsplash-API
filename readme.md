@@ -26,7 +26,6 @@ r.onreadystatechange = function () {
 r.send();
 
 // &per_page=10 - shows x amount of images on a single page
-```
 
 The data was then converted from a JSON (click to view json data <a href="../data.json">JSON file</a>) to a CSV file in order to insert it into MySQL Workbench which is an SQL Graphical User Interface to manipulate data using database queries and four basic functions of persistent storage which are known as CRUD:
 <br>C - Create
@@ -34,8 +33,9 @@ The data was then converted from a JSON (click to view json data <a href="../dat
 <br>U - Update
 <br>D - Delete
 
-I put the ```
-// &per_page=10 - shows x amount of images on a single page
+I put the:
+```
+&per_page=10 - shows x amount of images on a single page
 ```
 
 ## Search
