@@ -29,6 +29,7 @@ r.send();
 ```
 
 <a href="/data.json">JSON data file</a>
+<hr>
 
 The data was then converted from a JSON to a CSV file in order to insert it into MySQL Workbench which is an SQL Graphical User Interface to manipulate data using database queries and four basic functions of persistent storage which are known as CRUD:
 <br>C - Create
