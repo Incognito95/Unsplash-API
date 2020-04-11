@@ -1,0 +1,43 @@
+<%- include ./partials/header %>
+<%- include ./partials/sidebar %>
+
+<div class="container">
+    <h3>Search Function</h3>
+    <form method="get" action="/search">
+        <fieldset>
+            <label>ID</label>
+            <input type="text" name="id" class="form-control">
+        </fieldset>
+        <fieldset>
+            <label>Username</label>
+            <input type="text" name="username" class="form-control">
+        </fieldset>
+        <fieldset>
+            <label>Description</label>
+            <input type="text" name="description" class="form-control">
+        </fieldset>
+        <button type="submit" class="btn search-btn">Search</button>
+        <a href="/collection" class="btn btn-light btn-collection">Back to collection</a>
+    </form>
+</div>
+<!---end of container--->
+
+<!--- search results -->
+<div class="container">
+    <table class="table" id="myTable">
+        <tr>
+            <th>ID</th>
+            <th>Username</th>
+            <th>Description</th>
+            <th>Images</th>
+        </tr>
+        <% if (typeof results !== "undefined") results.forEach(result => { %>
+        <tr>
+            <td><%= result.id %></td>
+            <td><%= result.username %></td>
+            <td><%= result.description %></td>
+            <td><img src="<%= result.images %>" width="70"></td>
+        </tr>
+        <% }) %>
+    </table>
+</div>
