@@ -34,7 +34,7 @@ The data was then converted from a JSON (click to view json data <a href="../dat
 <br>D - Delete
 
 I put the:
-```
+``
 &per_page=10 - shows x amount of images on a single page
 ```
 
