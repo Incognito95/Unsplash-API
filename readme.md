@@ -1,5 +1,4 @@
-![Unsplash Logo](https://unsplash.com/assets/core/logo-black-df2168ed0c378fa5506b1816e75eb379d06cfcd0af01e07a2eb813ae9b5d7405.svg) 
-##
+![Unsplash Logo](https://unsplash.com/assets/core/logo-black-df2168ed0c378fa5506b1816e75eb379d06cfcd0af01e07a2eb813ae9b5d7405.svg) ## Unsplash
 
 Got data from Unsplash API using the Unsplash documentation while using Fetch like so:
 ``` Javascript
