@@ -5,7 +5,7 @@ Got data from Unsplash API by using the Fetch method like so:
 // read - show all images / description
 var results = document.getElementById('results');
 var r = new XMLHttpRequest();
-r.open("GET", "https://api.unsplash.com/photos/?client_id={AccessKey}", true);
+r.open("GET", "https://api.unsplash.com/photos/?client_id={AccessKey}&per_page=10 - shows x amount of images on a single page", true);
 r.onreadystatechange = function () {
   if (r.readyState != 4 || r.status != 200) return;
   var data = JSON.parse(r.responseText);
@@ -33,6 +33,10 @@ The data was then converted from a JSON (click to view json data <a href="../dat
 <br>R - Read
 <br>U - Update
 <br>D - Delete
+
+I put the ```
+// &per_page=10 - shows x amount of images on a single page
+```
 
 ## Search
 Search function was made on the table collections layout view to make it easier to search and try to find what your looking for by using the keyword known as `LIKE` and `% %`. It's not 100% finished yet will be finishing the search function a little bit later on, but at the moment you can only search based on the number on the ID.
