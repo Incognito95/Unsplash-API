@@ -1,6 +1,6 @@
 ## Unsplash - API
 
-Got data from Unsplash API using the Unsplash documentation while using Fetch like so:
+Got data from Unsplash API by using the Fetch method like so:
 ``` Javascript
 // read - show all images / description
 var results = document.getElementById('results');
