@@ -1,7 +1,7 @@
-# Unsplash
+## Unsplash
 
 Got data from Unsplash API using the Unsplash documentation while using Fetch like so:
-```javascript
+``` Javascript
 // read - show all images / description
 var results = document.getElementById('results');
 var r = new XMLHttpRequest();
@@ -32,3 +32,6 @@ The data was then converted from a JSON to a CSV file in order to insert it into
 <br>R - Read
 <br>U - Update
 <br>D - Delete
+
+## Search
+Search function was made on the table collections layout view to make it easier to search and try to find what your looking for by using the keyword known as `LIKE` and `% %`
