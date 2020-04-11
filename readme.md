@@ -34,4 +34,4 @@ The data was then converted from a JSON to a CSV file in order to insert it into
 <br>D - Delete
 
 ## Search
-Search function was made on the table collections layout view to make it easier to search and try to find what your looking for by using the keyword known as `LIKE` and `% %`. It's not 100% finished yet will be finishing the search function a little bit later on, but at the moment you can only search based on the number on the ID
+Search function was made on the table collections layout view to make it easier to search and try to find what your looking for by using the keyword known as `LIKE` and `% %`. It's not 100% finished yet will be finishing the search function a little bit later on, but at the moment you can only search based on the number on the ID.
