@@ -9,6 +9,10 @@ h3 {
     cursor: pointer;
 }
 
+a:hover {
+    color: black;
+}
+
 tr:hover {
     background: #f8f9fa;
 }

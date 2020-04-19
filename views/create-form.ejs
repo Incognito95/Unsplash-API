@@ -1,0 +1,20 @@
+<%- include ./partials/sidebar-left %>
+
+<div class="container">
+    <div class="alert alert-success" role="alert"><%= typeof messages !== "undefined" && typeof messages.info !== "undefined" ? messages.info : "" %></div>
+    <form action="/create" method="post">
+        <fieldset>
+            <label for="">Username</label>
+            <input type="text" name="username" class="form-control">
+        </fieldset>
+        <fieldset>
+            <label for="">Description</label>
+            <input type="text" name="description" class="form-control">
+        </fieldset>
+        <fieldset>
+            <label for="">Images</label>
+            <input type="text" name="images" class="form-control">
+        </fieldset>
+        <button type="submit" class="btn btn-success create-btn">Create</button>
+    </form>
+</div>

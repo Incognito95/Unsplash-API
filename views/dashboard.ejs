@@ -1,0 +1,28 @@
+<%- include ./partials/sidebar-left %>
+
+<div class="container">
+    <a href="/create-form" class="btn btn-success create-btn">Create Form</a>
+    <div class="alert alert-success" role="alert"><%= typeof messages !== "undefined" && typeof messages.info !== "undefined" ? messages.info : "" %></div>
+    <table class="table" id="myTable">
+        <tr>
+            <th>ID</th>
+            <th>Username</th>
+            <th>Description</th>
+            <th>Images</th>
+            <th>Actions</th>
+        </tr>
+        <% results.forEach(result => { %>
+        <tr>
+            <td><%= result.id %></td>
+            <td><%= result.username %></td>
+            <td><%= result.description %></td>
+            <td><img src="<%= result.images %>" width="70"></td>
+            <td>
+                <a href="/edit-data/<%= result.id %>" class="btn btn-info">Edit</a>
+                <a href="/delete-data/<%= result.id %>" class="btn btn-danger">Delete</a>
+            </td>
+        </tr>
+        <% }) %>
+    </table>
+
+</div>

@@ -1,11 +1,11 @@
 ## Unsplash - API
 
 Got data from Unsplash API by using the Fetch method like so:
-```Javascript
+``` Javascript
 // read - show all images / description
 var results = document.getElementById('results');
 var r = new XMLHttpRequest();
-r.open("GET", "https://api.unsplash.com/photos/?client_id={AccessKey}&per_page=10 - shows x amount of images on a single page", true);
+r.open("GET", "https://api.unsplash.com/photos/?client_id={AccessKey}", true);
 r.onreadystatechange = function () {
   if (r.readyState != 4 || r.status != 200) return;
   var data = JSON.parse(r.responseText);

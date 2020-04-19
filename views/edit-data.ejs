@@ -1,0 +1,20 @@
+<%- include ./partials/sidebar-left %>
+
+<div class="container">
+    <h3 class="edit-title">Edit: <%= result.username %></h3>
+    <form method="post">
+        <fieldset>
+            <label for="">Username</label>
+            <input type="text" name="username" class="form-control" value="<%= result.username %>">
+        </fieldset>
+        <fieldset>
+            <label for="">Description</label>
+            <input type="text" name="description" class="form-control" value="<%= result.description %>">
+        </fieldset>
+        <fieldset>
+            <label for="">Images</label>
+            <input type="text" name="images" class="form-control" value="<%= result.images %>">
+        </fieldset>
+        <button type="submit" class="btn btn-primary save-btn">Save</button>
+    </form>
+</div>

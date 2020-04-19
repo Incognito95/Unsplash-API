@@ -18,6 +18,7 @@ require('./config/views')(app);
 require('./routes/home.route')(app);
 require('./routes/about.route')(app);
 require('./routes/collection.route')(app);
+require('./routes/dashboard.route')(app);
 
 
 
